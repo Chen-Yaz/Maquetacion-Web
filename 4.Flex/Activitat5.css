@@ -1,0 +1,101 @@
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+.top-bar {
+    font-size: 12px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.banner {
+    background: linear-gradient(90deg, #a8e063, #56ab2f); /* Degradado verde */
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.cat-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    object-fit: cover;
+}
+
+.cat-item p {
+    font-size: 11px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    text-align: left;
+    margin: 40px 5%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 0 5%;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    margin-bottom: 30px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-card h3 {
+    font-size: 14px;
+    margin: 15px 0 5px;
+    letter-spacing: 1px;
+}
+
+.product-card .description {
+    font-size: 11px;
+    color: #777;
+    margin: 0 0 5px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; 
+    }
+}
