@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+.app-container {
+    width: 375px;
+    height: 667px;
+    background: linear-gradient(rgba(0, 80, 150, 0.6), rgba(0, 80, 150, 0.6)), 
+                url('Foto.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 25px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+.weather-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-info h1 { font-size: 2.5rem; font-weight: 300; }
+.date-info p { opacity: 0.8; font-size: 0.9rem; }
+
+.temp-info { display: flex; align-items: center; gap: 5px; }
+.temp { font-size: 2.8rem; font-weight: 300; }
+.sun-icon { font-size: 3rem !important; }
+
+
+.greeting {
+    margin: 40px 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+
+.timeline {
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.event {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.time {
+    font-size: 2rem;
+    font-weight: 500;
+    min-width: 60px;
+}
+
+.time span {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.details {
+    padding-left: 20px;
+}
+
+.details h3 { font-size: 1.1rem; font-weight: 400; margin-bottom: 4px; }
+.details p { font-size: 0.85rem; opacity: 0.7; }
+
+
+.action-buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.btn:active { transform: scale(0.9); }
+
+.check { background-color: #27ae60; }
+.edit { background-color: #e67e22; }
+.add { background-color: #9b59b6; }
