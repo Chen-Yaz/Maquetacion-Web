@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 200px 300px;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blue {
+  grid-column: 1 / span 2;
+  background-color: #e6f2ff;
+  border: 8px solid #007bff;
+}
+
+.red {
+  background-color: #fce8e8;
+  border: 8px solid #d90000;
+}
+
+.gray {
+  background-color: #e6e6e6;
+  border: 8px solid #000000;
+}
+
+.box {
+  border-radius: 4px;
+}
