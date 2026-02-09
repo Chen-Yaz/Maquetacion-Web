@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gray {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  background-color: #e6e6e6;
+  border: 8px solid #000000;
+}
+
+.blue {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  background-color: #e6f2ff;
+  border: 8px solid #007bff;
+}
+
+.red {
+  background-color: #fce8e8;
+  border: 8px solid #d90000;
+}
+
+.yellow {
+  background-color: #fff9e6;
+  border: 8px solid #ffcc00;
+}
+
+.box {
+  border-radius: 4px;
+}
